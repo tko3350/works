@@ -1,0 +1,262 @@
+@charset "UTF-8";
+html{
+  font-size: 100%;
+}
+
+body{
+  font-size:0.875rem;
+  font-family: 'Arial', serif;
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style:none;
+}
+
+.wrapper{
+  max-width:1000px;
+  margin:0 auto;
+  text-align:center;
+  padding:90px 16px 150px 16px;
+}
+
+.sec-title{
+  font-size:4.5rem;
+  text-align:center;
+  color:#fff;
+  position:absolute;
+  top:30%;
+  width:100%;
+}
+
+.subtitle{
+  font-size:2.5rem;
+  display:inline-block;
+  border-bottom:solid 6px #e03131;
+  margin-bottom:70px;
+}
+
+.fixed-bg{
+  height:300px;
+  background-attachment: fixed;
+  background-size:cover;
+  background-position:center;
+}
+/* -------------------------------------------------- */
+/*                    header                          */
+/* -------------------------------------------------- */
+header{
+  width:100%;
+  height: 100vh;
+  background-image: url(mainvisual.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding:20px 40px;
+  position:relative;
+}
+
+header ul{
+  display:flex;
+  justify-content: flex-end;
+}
+
+header li{
+  color:#fff;
+  font-weight:bold;
+  font-size:1rem;
+  margin-left:20px;
+  filter: drop-shadow(1px 1px 2px #121212);
+  transition: all 0.3s ease;
+}
+
+header li:hover{
+  opacity:0.7;
+}
+
+header h1{
+  position:absolute;
+  top:45%;
+  left:0;
+  right:0;
+  text-align:center;
+ }
+/* -------------------------------------------------- */
+/*                    mainvisual                      */
+/* -------------------------------------------------- */
+.mainvisual {
+  width: 1920vw;
+  height:420px;
+  margin:4% auto 20px auto;
+  object-fit:cover;
+}
+/* -------------------------------------------------- */
+/*                    menu                            */
+/* -------------------------------------------------- */
+#menu{
+  margin-top:20px;
+}
+#menu .menu-img{
+  background-image: url(menu.jpg);
+  position:relative;
+}
+
+#menu .menu-content{
+  display:flex;
+}
+
+#menu .item{
+  padding:0 5%;
+  width:50%;
+  text-align:center;
+}
+
+#menu .item:first-child{
+  border-right:solid 1px #3e3e3e;
+}
+
+#menu dl{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+#menu dt{
+  border-bottom:dotted 1px #3e3e3e;
+  width:87%;
+  text-align:left;
+  margin-bottom:25px;
+}
+/* -------------------------------------------------- */
+/*                    about                           */
+/* -------------------------------------------------- */
+#about .about-img{
+  background-image: url(about.jpg);
+  position:relative;
+}
+
+#about ul{
+  display:flex;
+  text-align:left; 
+  flex-wrap:wrap;
+  margin-bottom:40px;
+}
+
+#about li{
+  width:50%;
+  padding:2%;
+}
+
+#about .btn{
+  font-size:1rem;
+  width:160px;
+  height:50px;
+  display:inline-block;
+  color:#3e3e3e;
+  transition: all 0.3s ease;
+  position:relative;
+  line-height:3.5;
+}
+
+#about .btn span{
+  position:relative;
+  display:block;
+  width:100%;
+  height:100%;
+}
+
+#about .btn::before,
+#about .btn::after{
+  position:absolute;
+  content:"";
+  right:0;
+  bottom:0;
+  background:#e03131;
+  transition: all 0.3s ease;
+}
+
+#about .btn span::before,
+#about .btn span::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #e03131;
+  transition: all 0.3s ease;
+}
+
+#about .btn::before,
+#about .btn span::before {
+  width: 2px;
+  height: 50%;
+}
+#about .btn::after,
+#about .btn span::after {
+  width: 20%;
+  height: 2px;
+}
+
+/*
+ホバー時の縦の動作
+右の赤線と左の赤線の高さを100%にする
+*/
+#about .btn:hover::before,
+#about .btn span:hover::before {
+  height: 100%;
+}
+/*
+ホバー時の横の動作
+下の赤線と上の赤線の横幅を100%にする
+*/
+#about .btn:hover::after,
+#about .btn span:hover::after {
+  width: 100%;
+}
+/* -------------------------------------------------- */
+/*                    location                        */
+/* -------------------------------------------------- */
+#location{
+  margin-top:20px;
+}
+
+#location .location-img{
+  background-image: url(location.jpg);
+  position:relative;
+}
+
+#location iframe{
+  margin-bottom:30px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#location p{
+  text-align:left;
+}
+
+/* -------------------------------------------------- */
+/*                    footer                          */
+/* -------------------------------------------------- */
+footer{
+  text-align:center;
+  padding:30px 0px;
+}
+
+footer .copyright {
+  font-size:0.875rem;
+}
+
+@media screen and (max-width:900px){
+  iframe{
+    width:300px;
+  }
+}

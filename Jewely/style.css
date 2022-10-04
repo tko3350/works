@@ -1,0 +1,118 @@
+@charset "UTF-8";
+html{
+  font-size: 100%;
+}
+
+body{
+  color:#333;
+  font-size:0.875rem;
+  font-family: 'Crimson Text', serif;
+}
+
+img{
+  max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color:#333;
+}
+
+li{
+  list-style:none;
+}
+
+.wrapper{
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.inner{
+  max-width:964px;
+  margin:0 auto;
+}
+
+.sec-title{
+  font-size:1.5rem;
+  font-weight:normal;
+}
+
+.sec-title2{
+  font-size:1rem;
+  margin-bottom:30px;
+  font-weight:normal;
+}
+/* -------------------------------------------------- */
+/*                    mainvisual                      */
+/* -------------------------------------------------- */
+#mainvisual{
+  text-align: center;
+}
+#mainvisual img{
+  width:1300px;
+  height:650px;
+  object-fit:cover;
+  margin:30px 0 10px 0;
+  
+}
+/* -------------------------------------------------- */
+/*                    menu                            */
+/* -------------------------------------------------- */
+#menu{
+  display:flex;
+  margin-bottom:30px;
+}
+.logo{
+  width:110px;
+  margin-right:50px;
+  margin-left:20px;
+  line-height: 20px;
+}
+#menu ul{
+  display:flex;
+}
+
+#menu li{
+  margin-right:30px;
+}
+/* -------------------------------------------------- */
+/*                    image                           */
+/* -------------------------------------------------- */
+#image .item{
+  display:flex;
+}
+
+#image .img{
+  width:50%;
+}
+
+#image .text{
+  width:50%;
+  padding:15% 5%;
+}
+/* -------------------------------------------------- */
+/*                    footer                          */
+/* -------------------------------------------------- */
+footer{
+  display:flex;
+  justify-content: space-between;
+  padding:20px 0;
+}
+
+footer .copyright {
+  font-size:0.75rem;
+}
+/* -------------------------------------------------- */
+/*                    sp                              */
+/* -------------------------------------------------- */
+@media screen and (max-width:600px){
+  #image .item{
+    flex-direction: column;
+  }
+  #image .img{
+    width:100%;
+  }
+  #image .text{
+    width:100%;
+  }
+}
